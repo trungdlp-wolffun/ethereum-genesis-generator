@@ -5,7 +5,7 @@ RUN git clone https://github.com/protolambda/eth2-testnet-genesis.git  \
     && go install github.com/protolambda/eth2-val-tools@latest \
     && go install github.com/protolambda/zcli@latest
 
-FROM debian:latest
+FROM debian:stable
 WORKDIR /work
 VOLUME ["/config", "/data"]
 EXPOSE 8000/tcp

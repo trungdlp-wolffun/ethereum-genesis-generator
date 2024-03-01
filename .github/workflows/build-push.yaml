@@ -5,7 +5,8 @@ on:
       - master
     tags:
       - '**'
-    workflow_dispatch:
+  
+  workflow_dispatch: {}
 
 jobs:
   build-push:
@@ -29,7 +30,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ethpandaops/ethereum-genesis-generator
+          images: trungkenbi/ethereum-genesis-generator
           flavor: latest=true
           tags: |
             type=ref,event=branch

@@ -23,7 +23,8 @@ el_premine:
   "m/44'/60'/0'/0/18": 1000000000ETH
   "m/44'/60'/0'/0/19": 1000000000ETH
   "m/44'/60'/0'/0/20": 1000000000ETH
-el_premine_addrs: {}
+el_premine_addrs:
+  "0x118B430CDcB5ae022A687fD7B366dB8d5833174F": 1000000000ETH
 genesis_timestamp: ${GENESIS_TIMESTAMP}
 genesis_delay: ${GENESIS_DELAY}
 slot_duration_in_seconds: ${SLOT_DURATION_IN_SECONDS}
